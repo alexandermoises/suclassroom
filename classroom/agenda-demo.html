@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda un demo | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                SU<span>Classroom</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="asesores.html">Asesorías</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Crema</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="demo-page">
+        <section class="demo-left">
+            <div class="demo-brand">
+                <span class="demo-brand-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <strong>SUClassroom</strong>
+            </div>
+
+            <div class="demo-visual">
+                <div class="demo-mini-card demo-card-one">
+                    <small>Curso activo</small>
+                    <b>Marketing Digital</b>
+                    <span>Nuevo</span>
+                </div>
+
+                <div class="demo-photo-card">
+                    <div class="demo-photo-overlay">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+
+                <div class="demo-mini-card demo-card-two">
+                    <small>Panel de avance</small>
+                    <b>Clases completadas</b>
+                    <div class="demo-bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="demo-mini-card demo-card-three">
+                    <small>Horas de estudio</small>
+                    <b>3.188</b>
+                    <span class="up">↑ 10%</span>
+                </div>
+            </div>
+
+            <h1>Ahorra <span>85% de tiempo</span> en la gestión de tu aprendizaje</h1>
+            <p>
+                En SUClassroom te ayudamos a organizar cursos, asesores, estudiantes y proyectos para que puedas enfocarte en aprender, avanzar y lograr resultados.
+            </p>
+        </section>
+
+        <section class="demo-right">
+            <div class="demo-form-card">
+                <div class="review-pill">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.6</span>
+                </div>
+
+                <h2>Prueba SUClassroom</h2>
+                <p>Agenda una demo con nosotros.</p>
+
+                <form class="demo-form" onsubmit="event.preventDefault(); alert('Solicitud de demo enviada');">
+                    <div class="form-two">
+                        <label>Nombre*
+                            <input type="text" required>
+                        </label>
+                        <label>Apellido*
+                            <input type="text" required>
+                        </label>
+                    </div>
+
+                    <div class="form-two">
+                        <label>Email*
+                            <input type="email" required>
+                        </label>
+                        <label>Número de colaboradores*
+                            <select required>
+                                <option value="">Selecciona una opción</option>
+                                <option>1 - 10</option>
+                                <option>11 - 50</option>
+                                <option>51 - 100</option>
+                                <option>Más de 100</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <label class="checkbox-row">
+                        <input type="checkbox">
+                        <span>Suscríbete al newsletter: People Insights</span>
+                    </label>
+
+                    <small class="demo-privacy">
+                        En SUClassroom respetamos tu privacidad. Al enviar este formulario, aceptas el uso de tus datos.
+                        Para soporte, contáctanos: soporte@classroom.com
+                    </small>
+
+                    <button class="btn btn-primary demo-submit" type="submit">Agenda una demo gratis</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="theme.js"></script>
+</body>
+</html>

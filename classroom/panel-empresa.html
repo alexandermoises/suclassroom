@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Empresa / ONG | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-protected="true" data-allowed-roles="empresa_ong,administrador">
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a>
+            <ul class="nav-links">
+                <li><a class="active" href="panel-empresa.html">Mi panel</a></li>
+                <li><a href="#grupos">Grupos</a></li>
+                <li><a href="#avance">Avance</a></li>
+                <li><a href="#impacto">Reportes</a></li>
+                <li><a href="#mentorias">Mentorías</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema"><i class="fa-solid fa-circle-half-stroke"></i><span>Crema</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-building-ngo"></i> Panel empresa / ONG</span>
+                <h1>Panel de empresa, ONG o institución.</h1>
+                <p>La empresa, ONG o institución ingresa con su propia cuenta para registrar grupos, asignar cursos, monitorear avance, revisar reportes de impacto y coordinar mentorías institucionales.</p>
+            </div>
+        </section>
+
+        <section class="section" id="grupos">
+            <div class="container dashboard-grid">
+                <article class="dashboard-card highlight-dashboard-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Grupos y cohortes</h3>
+                    <p>Registrar participantes, organizar beneficiarios por programa y asignarlos a cursos específicos.</p>
+                    <span class="status-pill">24 participantes</span>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3 id="avance">Seguimiento de avance</h3>
+                    <p>Ver porcentaje de módulos completados, entregables enviados y proyectos pendientes por grupo.</p>
+                    <span class="status-pill">68% avance</span>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-file-chart-column"></i>
+                    <h3 id="impacto">Reportes de impacto</h3>
+                    <p>Medir tasa de finalización, proyectos aprobados, proyectos activos y resultados generados.</p>
+                    <button class="btn btn-light">Ver reporte</button>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <h3 id="mentorias">Mentorías institucionales</h3>
+                    <p>Coordinar sesiones grupales o asesorías especializadas para sus participantes.</p>
+                    <a class="btn btn-primary" href="asesores.html">Coordinar asesoría</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container requirements-panel">
+                <div class="section-header requirements-header">
+                    <div>
+                        <span class="kicker">Métricas B2B</span>
+                        <h2>Indicadores que puede revisar la institución</h2>
+                    </div>
+                    <p class="section-copy">El panel institucional ayuda a demostrar el impacto de los programas y el avance de sus usuarios.</p>
+                </div>
+                <div class="requirements-grid">
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-user-check"></i></div><h3>Usuarios activos</h3><p>Participantes registrados, activos y con avance reciente.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-folder-check"></i></div><h3>Proyectos aprobados</h3><p>Proyectos revisados por mentor y validados para continuar.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-stopwatch"></i></div><h3>Tiempo promedio</h3><p>Días promedio para completar curso, entregar y corregir proyecto.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-credit-card"></i></div><h3>Pagos institucionales</h3><p>Licencias por volumen, paquetes de asesoría y suscripciones.</p></article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><div><a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a><p style="margin-top:14px;">Panel institucional para empresas y ONGs.</p></div><div><h4>Acceso</h4><div class="footer-links"><a href="login.html">Iniciar sesión</a><a href="registro.html">Crear cuenta</a></div></div><div><h4>Sesión</h4><div class="footer-links"><a href="login.html">Cambiar cuenta</a><a href="registro.html">Crear cuenta</a></div></div><div><h4>Soporte</h4><div class="footer-links"><a href="https://wa.me/51999999999" target="_blank">WhatsApp</a><a href="index.html">Inicio</a></div></div></div></footer>
+<script src="auth-guard.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

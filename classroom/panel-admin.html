@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrador | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-protected="true" data-allowed-roles="administrador">
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a>
+            <ul class="nav-links">
+                <li><a class="active" href="panel-admin.html">Mi panel</a></li>
+                <li><a href="#usuarios">Usuarios</a></li>
+                <li><a href="#cursos-admin">Cursos</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+                <li><a href="requisitos-formulario.html">Requisitos internos</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema"><i class="fa-solid fa-circle-half-stroke"></i><span>Crema</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-user-shield"></i> Panel administrador</span>
+                <h1>Panel del administrador.</h1>
+                <p>El administrador tiene su propia cuenta para gestionar alumnos, mentores, cursos, proyectos, pagos, reportes y el panel institucional.</p>
+            </div>
+        </section>
+
+        <section class="section" id="usuarios">
+            <div class="container dashboard-grid">
+                <article class="dashboard-card highlight-dashboard-card">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3>Gestión de usuarios</h3>
+                    <p>Administrar cuentas de alumnos, mentores y empresas u ONGs.</p>
+                    <span class="status-pill">Roles separados</span>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-book"></i>
+                    <h3>Gestión de cursos</h3>
+                    <p>Crear cursos, módulos, videos, guías y plantillas.</p>
+                    <button class="btn btn-light">Editar cursos</button>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>Pagos de asesoría</h3>
+                    <p>Validar pagos para habilitar la sesión con el asesor.</p>
+                    <span class="status-pill">Simulación de pago</span>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h3 id="reportes">Reportes y métricas</h3>
+                    <p>Revisar avance, proyectos aprobados, tasa de finalización e impacto.</p>
+                    <button class="btn btn-primary">Ver reportes</button>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-lock"></i>
+                    <h3>Requisitos internos</h3>
+                    <p>Acceso privado para revisar el formulario del profesor, reglas del sistema y funcionalidades indispensables.</p>
+                    <a class="btn btn-primary" href="requisitos-formulario.html">Ver requisitos internos</a>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container requirements-panel">
+                <div class="section-header requirements-header">
+                    <div>
+                        <span class="kicker">Según formulario</span>
+                        <h2>El administrador controla contenido, criterios y métricas</h2>
+                    </div>
+                    <p class="section-copy">Los cursos deben tener objetivo, resultados esperados, proyecto, instrucciones, criterios de evaluación, plantillas, nivel y categoría.</p>
+                </div>
+                <div class="requirements-grid">
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-pen-to-square"></i></div><h3>Crear y editar cursos</h3><p>Solo el administrador crea cursos en la primera versión y puede editarlos después de publicados.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-list-check"></i></div><h3>Criterios de aprobación</h3><p>Define cómo se evalúa el proyecto y cuándo se considera aprobado.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Métricas</h3><p>Usuarios activos, finalización, proyectos entregados, aprobados, rechazados, asesorías e ingresos.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-building-ngo"></i></div><h3>Panel institucional</h3><p>Supervisa empresas, ONGs, grupos, programas y reportes de impacto.</p></article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><div><a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a><p style="margin-top:14px;">Panel administrativo para gestionar el sistema.</p></div><div><h4>Acceso</h4><div class="footer-links"><a href="login.html">Iniciar sesión</a><a href="registro.html">Crear cuenta</a></div></div><div><h4>Sesión</h4><div class="footer-links"><a href="login.html">Cambiar cuenta</a><a href="registro.html">Crear cuenta</a></div></div><div><h4>Soporte</h4><div class="footer-links"><a href="https://wa.me/51999999999" target="_blank">WhatsApp</a><a href="index.html">Inicio</a></div></div></div></footer>
+<script src="auth-guard.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

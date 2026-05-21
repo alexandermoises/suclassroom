@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos del formulario | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-protected="true" data-allowed-roles="administrador">
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                SU<span>Classroom</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="asesores.html">Asesorías</a></li>
+                <li><a class="active" href="requisitos-formulario.html">Requisitos internos</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Crema</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-lock"></i> Requisitos internos del administrador</span>
+                <h1>Plataforma e-learning para emprendedores.</h1>
+                <p>Esta sección no es pública. Solo debe verla el administrador después de iniciar sesión para revisar los requisitos internos del sistema.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container requirements-panel">
+                <div class="section-header requirements-header">
+                    <div>
+                        <span class="kicker">Flujo principal</span>
+                        <h2>Flujo que debe cumplir el sistema</h2>
+                    </div>
+                    <p class="section-copy">La primera versión debe validar el núcleo del modelo: aprender, aplicar, entregar, recibir feedback, mejorar y avanzar.</p>
+                </div>
+                <div class="timeline-grid">
+                    <article class="timeline-step"><strong>1</strong><h3>Registro obligatorio</h3><p>El usuario crea cuenta por rol: alumno, mentor, administrador o empresa/ONG. Los requisitos internos solo son visibles para administrador.</p></article>
+                    <article class="timeline-step"><strong>2</strong><h3>Diagnóstico inicial</h3><p>El alumno indica si tiene emprendimiento, empresa, programa social o idea de proyecto.</p></article>
+                    <article class="timeline-step"><strong>3</strong><h3>Curso inicial gratis</h3><p>Accede al primer curso gratuito con módulos, videos, guías y plantillas.</p></article>
+                    <article class="timeline-step"><strong>4</strong><h3>Entregable obligatorio</h3><p>Entrega formularios, plantillas, PDF, presentación o enlace con su avance real.</p></article>
+                    <article class="timeline-step"><strong>5</strong><h3>Evaluación del mentor</h3><p>El mentor aprueba, rechaza o devuelve feedback accionable para corregir.</p></article>
+                    <article class="timeline-step"><strong>6</strong><h3>Pago y asesoría</h3><p>Después de enviar el proyecto, el pago habilita revisión + asesoría y desbloquea el siguiente curso.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="kicker">Roles del sistema</span>
+                        <h2>Cada tipo de usuario tiene funciones diferentes</h2>
+                    </div>
+                    <p class="section-copy">Estos roles salen del formulario y están reflejados en el registro, login y paneles.</p>
+                </div>
+                <div class="dashboard-grid">
+                    <article class="dashboard-card highlight-dashboard-card">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <h3>Alumno</h3>
+                        <p>Accede a cursos, completa módulos, desarrolla entregables, envía proyectos, recibe feedback, agenda asesorías, revisa progreso y accede a recursos.</p>
+                        <a class="btn btn-primary" href="panel-alumno.html">Ver panel alumno</a>
+                    </article>
+                    <article class="dashboard-card">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Mentor</h3>
+                        <p>Revisa proyectos, da retroalimentación estructurada, aprueba o rechaza entregables, atiende asesorías y da seguimiento.</p>
+                        <a class="btn btn-light" href="panel-mentor.html">Ver panel mentor</a>
+                    </article>
+                    <article class="dashboard-card">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h3>Administrador</h3>
+                        <p>Gestiona usuarios, cursos, contenidos, criterios de evaluación, mentores, pagos, accesos, reportes y calidad del servicio.</p>
+                        <a class="btn btn-light" href="panel-admin.html">Ver panel admin</a>
+                    </article>
+                    <article class="dashboard-card">
+                        <i class="fa-solid fa-building-ngo"></i>
+                        <h3>Empresa / ONG</h3>
+                        <p>Registra grupos, invita participantes, asigna cursos, monitorea avance, solicita programas y revisa reportes institucionales.</p>
+                        <a class="btn btn-light" href="panel-empresa.html">Ver panel empresa</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section requirements-section" id="funcionalidades-formulario">
+            <div class="container requirements-panel">
+                <div class="section-header requirements-header">
+                    <div>
+                        <span class="kicker">Funcionalidades indispensables</span>
+                        <h2>Lo que debe tener SUClassroom</h2>
+                    </div>
+                    <p class="section-copy">Estas funcionalidades aseguran que el usuario no solo aprenda, sino que ejecute y avance en su proyecto de forma estructurada.</p>
+                </div>
+                <div class="requirements-grid">
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-lock-open"></i></div><h3>Cursos progresivos</h3><p>Acceso desbloqueable según avance, entregables y proyecto aprobado.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-play"></i></div><h3>Módulos estructurados</h3><p>Videos, guías, plantillas, lecturas, ejemplos y casos reales.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-folder-open"></i></div><h3>Gestión de proyectos</h3><p>Desarrollar, guardar, actualizar, corregir y reenviar entregables.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-clipboard-check"></i></div><h3>Evaluación</h3><p>Criterios claros, validación por mentor y aprobación del proyecto.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-comments"></i></div><h3>Retroalimentación</h3><p>Feedback escrito y asesorías accionables para mejorar el proyecto.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-calendar-check"></i></div><h3>Mentorías</h3><p>Agenda para reservar sesiones con expertos después del pago.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Dashboard</h3><p>Avance, estado del proyecto, próximos pasos y métricas por usuario.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-users-gear"></i></div><h3>Roles diferenciados</h3><p>Alumno, mentor, administrador y empresa/ONG con funciones propias.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-building"></i></div><h3>Panel B2B</h3><p>Empresas y ONGs monitorean grupos, cumplimiento e impacto.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-chart-pie"></i></div><h3>Reportes</h3><p>Finalización, proyectos entregados, aprobados, rechazados e ingresos.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-credit-card"></i></div><h3>Pagos</h3><p>Pago o simulación con Culqi para asesorías, revisión o suscripción.</p></article>
+                    <article class="requirement-card"><div class="requirement-icon"><i class="fa-solid fa-file-arrow-down"></i></div><h3>Recursos</h3><p>Repositorio de plantillas y herramientas según avance del usuario.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container dashboard-grid compact-grid">
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Soporte</h3>
+                    <p>Canales: WhatsApp, chat y correo. La asesoría principal se realiza por videollamada en tiempo real.</p>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h3>Tipo de plataforma</h3>
+                    <p>Web y mobile. La primera versión puede integrar herramientas externas para video, agenda y almacenamiento.</p>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Seguridad y acceso</h3>
+                    <p>Registro obligatorio, email y contraseña, Google/redes sociales, verificación de email y sin compartir cuentas.</p>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>Contenido del curso</h3>
+                    <p>Objetivo, resultados, proyecto, pasos, criterios, plantillas, recursos, tiempo estimado, nivel y categoría.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a>
+                <p style="margin-top: 14px;">Plataforma de ejecución guiada para emprendedores, empresas y programas sociales.</p>
+            </div>
+            <div><h4>Explora</h4><div class="footer-links"><a href="cursos.html">Cursos</a><a href="asesores.html">Asesorías</a></div></div>
+            <div><h4>Cuentas</h4><div class="footer-links"><a href="registro.html">Crear cuenta</a><a href="login.html">Iniciar sesión</a></div></div>
+            <div><h4>Soporte</h4><div class="footer-links"><a href="https://wa.me/51999999999" target="_blank">WhatsApp</a><a href="index.html">Inicio</a></div></div>
+        </div>
+    </footer>
+<script src="auth-guard.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

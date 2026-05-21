@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de asesoría | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                SU<span>Classroom</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="asesores.html">Asesorías</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Crema</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-credit-card"></i> Pago de asesoría</span>
+                <h1>Pago de asesoría con mentor.</h1>
+                <p>El pago se solicita cuando el alumno ya presentó su proyecto final y eligió un mentor habilitado para su curso.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container payment-layout">
+                <div class="detail-card">
+                    <span class="kicker">Proceso</span>
+                    <h2>Cómo funciona</h2>
+                    <div class="access-flow payment-steps">
+                        <div class="access-step">
+                            <b>1. Accede a un curso gratis</b>
+                            <span>El estudiante se registra y revisa el contenido inicial sin pagar.</span>
+                        </div>
+                        <div class="access-step">
+                            <b>2. Presenta el proyecto final</b>
+                            <span>La agenda con mentores permanece bloqueada hasta que el proyecto final esté presentado.</span>
+                        </div>
+                        <div class="access-step">
+                            <b>3. Agenda, paga y desbloquea</b>
+                            <span>Al pagar la asesoría se confirma la sesión y se habilita iniciar un nuevo curso.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="detail-card payment-card" data-payment-page>
+                    <h3>Asesoría personalizada</h3>
+                    <p>Sesión para revisar tu proyecto, emprendimiento o empresa con un mentor habilitado para tu curso.</p>
+                    <div data-payment-summary></div>
+                    <div class="course-price-row payment-price">
+                        <span class="price">S/ 70</span>
+                        <span>1 sesión</span>
+                    </div>
+                    <ul class="lesson-list">
+                        <li><b>Duración</b><span>45 minutos</span></li>
+                        <li><b>Modalidad</b><span>Virtual</span></li>
+                        <li><b>Acceso al asesor</b><span>Después del pago</span></li>
+                    </ul>
+
+                    <form class="payment-form">
+                        <label>Nombre completo<input type="text" placeholder="Tu nombre" required></label>
+                        <label>Correo electrónico<input type="email" placeholder="correo@ejemplo.com" required></label>
+                        <label>Tipo de proyecto
+                            <select required>
+                                <option>Emprendimiento</option>
+                                <option>Empresa</option>
+                                <option>Proyecto académico</option>
+                                <option>Idea personal</option>
+                            </select>
+                        </label>
+                        <button class="btn btn-primary" type="submit" style="width:100%;">Pagar asesoría y confirmar agenda</button>
+                    </form>
+                    <div class="unlock-alert success payment-success" data-payment-success hidden></div>
+                    <a class="btn btn-light" href="cursos.html" style="width:100%; margin-top:12px;">Volver a cursos gratis</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">
+                    <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                    SU<span>Classroom</span>
+                </a>
+                <p style="margin-top: 14px;">Plataforma de liderazgo, emprendimiento y productividad para convertir aprendizaje en proyectos reales.</p>
+            </div>
+            <div>
+                <h4>Explora</h4>
+                <div class="footer-links">
+                    <a href="cursos.html">Cursos</a>
+                    <a href="asesores.html">Asesorías</a>
+                </div>
+            </div>
+            <div>
+                <h4>Aprende</h4>
+                <div class="footer-links">
+                    <a href="curso-comunicacion.html">Cursos gratis</a>
+                    <a href="pago-asesoria.html">Pago de asesoría</a>
+                </div>
+            </div>
+            <div>
+                <h4>Acceso</h4>
+                <div class="footer-links">
+                    <a href="login.html">Ingresar</a>
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="theme.js"></script>
+<script src="mentores.js"></script>
+</body>
+</html>

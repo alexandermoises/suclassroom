@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                SU<span>Classroom</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="asesores.html">Asesorías</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Crema</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-book-open"></i> Catálogo de cursos</span>
+                <h1>Elige una ruta y empieza a aprender.</h1>
+                <p>Cursos organizados por nivel, duración y objetivo. Todos los cursos son sin costo; si después quieres hablar con un mentor, primero debes presentar el proyecto final y luego pagar la asesoría.</p>
+            </div>
+        </section>
+
+
+        <section class="section" style="padding-bottom:0;">
+            <div class="container">
+                <div class="free-course-notice">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div>
+                        <b>Selecciona cualquier curso sin costo.</b>
+                        <span>Al señalar un curso verás el aviso: el curso es gratis; para hablar con un mentor primero debes presentar el proyecto final y luego pagar la asesoría.</span>
+                    </div>
+                </div>
+                <div data-new-course-banner></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container course-grid">
+                <a class="course-card free-course-card" href="curso-emprendimiento.html">
+                    <div class="course-cover purple"><span class="level">Gratis</span><i class="fa-solid fa-rocket"></i></div>
+                    <div class="course-body"><h3>Emprendimiento Social</h3><p>Diseña proyectos con impacto y valida tu propuesta.</p><div class="meta"><span>8 módulos</span><span>Certificado</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div></div>
+                </a>
+                <a class="course-card free-course-card" href="curso-liderazgo.html">
+                    <div class="course-cover blue"><span class="level">Gratis</span><i class="fa-solid fa-chess-king"></i></div>
+                    <div class="course-body"><h3>Liderazgo Estratégico</h3><p>Mejora tu comunicación, visión y gestión de equipos.</p><div class="meta"><span>6 módulos</span><span>4.9 ★</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div></div>
+                </a>
+                <a class="course-card free-course-card" href="curso-digital.html">
+                    <div class="course-cover green"><span class="level">Gratis</span><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="course-body"><h3>Herramientas Digitales</h3><p>Organiza tareas, recursos y entregables digitales.</p><div class="meta"><span>12 clases</span><span>Proyecto final</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div></div>
+                </a>
+                <a class="course-card free-course-card" href="curso-marketing.html">
+                    <div class="course-cover orange"><span class="level">Gratis</span><i class="fa-solid fa-bullhorn"></i></div>
+                    <div class="course-body"><h3>Marketing Digital</h3><p>Aprende a crear campañas, contenidos y estrategias para promocionar tu proyecto.</p><div class="meta"><span>7 módulos</span><span>Campañas</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div></div>
+                </a>
+                <a class="course-card" href="asesores.html">
+                    <div class="course-cover dark"><span class="level">Pago después</span><i class="fa-solid fa-user-tie"></i></div>
+                    <div class="course-body"><h3>Asesoría de Proyecto</h3><p>Servicio pagado para hablar con un asesor después de llevar un curso gratis.</p><div class="meta"><span>1 sesión</span><span>Feedback</span></div>
+                            <div class="course-price-row"><span class="price">S/ 70</span><span style="color:var(--muted); font-weight:800;">Solicitar asesoría</span></div></div>
+                </a>
+                <a class="course-card free-course-card" href="curso-comunicacion.html">
+                    <div class="course-cover pink"><span class="level">Curso gratis</span><i class="fa-solid fa-gift"></i></div>
+                    <div class="course-body"><h3>Comunicación de Impacto</h3><p>Presenta tu proyecto con narrativa clara y convincente.</p><div class="meta"><span>4 módulos</span><span>Pitch</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div></div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">
+                    <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                    SU<span>Classroom</span>
+                </a>
+                <p style="margin-top: 14px;">Plataforma de liderazgo, emprendimiento y productividad para convertir aprendizaje en proyectos reales.</p>
+            </div>
+            <div>
+                <h4>Explora</h4>
+                <div class="footer-links">
+                    <a href="cursos.html">Cursos</a>
+                    <a href="asesores.html">Asesorías</a>
+                </div>
+            </div>
+            <div>
+                <h4>Aprende</h4>
+                <div class="footer-links">
+                    <a href="curso-emprendimiento.html">Emprendimiento Social</a>
+                    <a href="curso-liderazgo.html">Liderazgo Estratégico</a>
+                    <a href="curso-digital.html">Herramientas Digitales</a>
+                </div>
+            </div>
+            <div>
+                <h4>Acceso</h4>
+                <div class="footer-links">
+                    <a href="login.html">Ingresar</a>
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="theme.js"></script>
+<script src="mentores.js"></script>
+</body>
+</html>

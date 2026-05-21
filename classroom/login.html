@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                SU<span>Classroom</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="asesores.html">Asesorías</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Crema</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-right-to-bracket"></i> Acceso por rol</span>
+                <h1>Inicia sesión con tu cuenta.</h1>
+                <p>Selecciona tu rol y el sistema te llevará a un panel diferente según tu cuenta: alumno, mentor, administrador o empresa/ONG.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container account-layout auth-single">
+                <form class="form-card account-form" data-login-form>
+                    <div class="form-grid">
+                        <label>Ingresar como
+                            <select name="rol" data-role-select>
+                                <option value="alumno">Alumno</option>
+                                <option value="mentor">Mentor</option>
+                                <option value="administrador">Administrador</option>
+                                <option value="empresa_ong">Empresa / ONG</option>
+                            </select>
+                        </label>
+                        <label>Correo electrónico<input type="email" placeholder="correo@ejemplo.com" required></label>
+                        <label>Contraseña<input type="password" placeholder="********" required></label>
+
+                        <div class="role-fields is-visible" data-role-fields="alumno">
+                            <div class="form-note success-note"><i class="fa-solid fa-user-graduate"></i> Entrarás al panel del alumno para ver cursos, primera clase gratis, proyecto, progreso y asesoría pagada.</div>
+                        </div>
+                        <div class="role-fields" data-role-fields="mentor">
+                            <div class="form-note"><i class="fa-solid fa-user-tie"></i> Entrarás al panel del mentor para revisar proyectos, retroalimentar y ver asesorías agendadas.</div>
+                        </div>
+                        <div class="role-fields" data-role-fields="administrador">
+                            <div class="form-note"><i class="fa-solid fa-user-shield"></i> Entrarás al panel del administrador para gestionar cursos, alumnos, mentores, pagos, reportes y requisitos internos.</div>
+                        </div>
+                        <div class="role-fields" data-role-fields="empresa_ong">
+                            <div class="form-note"><i class="fa-solid fa-building-ngo"></i> Entrarás al panel institucional para monitorear grupos, avance, proyectos aprobados y reportes de impacto.</div>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+                        <a class="btn btn-light" href="registro.html">Crear cuenta nueva</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">
+                    <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                    SU<span>Classroom</span>
+                </a>
+                <p style="margin-top: 14px;">Plataforma de liderazgo, emprendimiento y productividad para convertir aprendizaje en proyectos reales.</p>
+            </div>
+            <div>
+                <h4>Explora</h4>
+                <div class="footer-links">
+                    <a href="cursos.html">Cursos</a>
+                    <a href="asesores.html">Asesorías</a>
+                </div>
+            </div>
+            <div>
+                <h4>Acceso</h4>
+                <div class="footer-links">
+                    <a href="registro.html">Crear cuenta</a>
+                    <a href="login.html">Iniciar sesión</a>
+                </div>
+            </div>
+            <div>
+                <h4>Soporte</h4>
+                <div class="footer-links">
+                    <a href="https://wa.me/51999999999" target="_blank">WhatsApp</a>
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="theme.js"></script>
+<script src="cuentas.js"></script>
+</body>
+</html>

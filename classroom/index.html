@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUClassroom | Aprende habilidades para proyectos reales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                SU<span>Classroom</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="asesores.html">Asesorías</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Crema</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <span class="badge"><i class="fa-solid fa-bolt"></i> Plataforma de cursos y mentorías</span>
+                    <h1>Aprende skills reales y crea proyectos con <span class="gradient-text">impacto.</span></h1>
+                    <p>Una experiencia tipo academia online: todos los cursos se muestran sin costo para que puedas empezar gratis. Después, si necesitas acompañamiento personalizado, pagas una asesoría para hablar con un asesor.</p>
+
+                    <form class="search-box" onsubmit="event.preventDefault(); window.location.href='cursos.html';">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="¿Qué quieres aprender hoy? Liderazgo, negocios, tecnología...">
+                        <button class="btn btn-primary" type="submit">Buscar cursos</button>
+                    </form>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="registro.html"><i class="fa-solid fa-user-plus"></i> Crear cuenta y empezar</a>
+                        <a class="btn btn-light" href="database/BD_SUCLASSROOM_POSTGRESQL.sql" download><i class="fa-solid fa-database"></i> Descargar BD PostgreSQL</a>
+                    </div>
+
+                    <div class="hero-tags">
+                        <a class="chip" href="cursos.html">Emprendimiento</a>
+                        <a class="chip" href="cursos.html">Liderazgo</a>
+                        <a class="chip" href="cursos.html">Productividad</a>
+                        <a class="chip" href="#funcionalidades">Funcionalidades</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="mockup">
+                        <div class="mockup-top">
+                            <div class="dot-group"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            <strong>Panel de aprendizaje</strong>
+                        </div>
+
+                        <div class="learning-card">
+                            <small>Panel de aprendizaje</small>
+                            <h3>Cursos online para crecer</h3>
+                            <a class="btn btn-light" href="cursos.html">Ver cursos gratis</a>
+
+                            <div class="progress-mini">
+                                <div class="progress-row"><div class="bar"><span style="--w: 82%;"></span></div></div>
+                                <div class="progress-row"><div class="bar"><span style="--w: 64%;"></span></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="float-card one">
+                        <strong>Aprendizaje guiado</strong>
+                        <div class="avatar-row">
+                            <span class="avatar"><i class="fa-solid fa-book"></i></span>
+                            <span class="avatar" style="background:#00a6ff;"><i class="fa-solid fa-play"></i></span>
+                            <span class="avatar" style="background:#14b8a6;"><i class="fa-solid fa-check"></i></span>
+                        </div>
+                        <p style="color:var(--muted); line-height:1.5;">Cursos, clases y recursos en un solo lugar.</p>
+                    </div>
+
+                    
+                    <div class="float-card two">
+                        <strong>Cursos disponibles</strong>
+                        <p style="font-size:2rem; font-weight:900; color:var(--primary); margin:8px 0;">24+</p>
+                        <p style="color:var(--muted); line-height:1.5;">Rutas prácticas para aprender y avanzar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="kicker">Categorías</span>
+                        <h2>Explora por área de aprendizaje</h2>
+                    </div>
+                    <p class="section-copy">Cada categoría te lleva a una página interna para seguir explorando cursos y asesores.</p>
+                </div>
+
+                <div class="category-grid">
+                    <a class="category-card" href="cursos.html">
+                        <div class="category-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>Emprendimiento</h3>
+                        <p>Ideas, validación, pitch y modelos sostenibles.</p>
+                    </a>
+                    <a class="category-card" href="cursos.html">
+                        <div class="category-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3>Negocios</h3>
+                        <p>Gestión, estrategia y crecimiento de proyectos.</p>
+                    </a>
+                    <a class="category-card" href="cursos.html">
+                        <div class="category-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3>Liderazgo</h3>
+                        <p>Comunicación, equipos y toma de decisiones.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section form-summary-section" id="resumen-formulario">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="kicker">Basado en el formulario</span>
+                        <h2>SUClassroom convierte aprendizaje en ejecución real.</h2>
+                    </div>
+                    <p class="section-copy">La plataforma no solo muestra cursos: guía al alumno para aplicar, entregar, recibir feedback, pagar asesoría y avanzar a nuevos cursos. Los requisitos internos solo los puede revisar el administrador.</p>
+                </div>
+                <div class="dashboard-grid compact-grid">
+                    <article class="dashboard-card highlight-dashboard-card">
+                        <i class="fa-solid fa-route"></i>
+                        <h3>Flujo MVP</h3>
+                        <p>Aprender -> aplicar -> entregar proyecto -> recibir feedback -> mejorar -> pagar asesoría -> desbloquear el siguiente curso.</p>
+                        <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                    </article>
+                    <article class="dashboard-card">
+                        <i class="fa-solid fa-gift"></i>
+                        <h3>Curso inicial gratis</h3>
+                        <p>El usuario accede al primer curso gratuito, pero el avance depende de entregables y validación del proyecto.</p>
+                    </article>
+                    <article class="dashboard-card">
+                        <i class="fa-solid fa-video"></i>
+                        <h3>Cursos mixtos</h3>
+                        <p>Contenido grabado, sesiones en vivo, guías, plantillas y recursos aplicados a su propio emprendimiento.</p>
+                    </article>
+                    <article class="dashboard-card">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h3>Métricas de impacto</h3>
+                        <p>Usuarios activos, proyectos entregados, aprobaciones, asesorías, conversión a pago y resultados generados.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section requirements-section" id="funcionalidades">
+            <div class="container">
+                <div class="requirements-panel">
+                    <div class="section-header requirements-header">
+                        <div>
+                            <span class="kicker">Funcionalidades indispensables</span>
+                            <h2>¿Qué funcionalidades considera indispensables para el sistema?</h2>
+                        </div>
+                        <p class="section-copy">El sistema debe asegurar que el usuario no solo aprenda, sino que ejecute y avance en su proyecto de forma estructurada.</p>
+                    </div>
+
+                    <div class="requirement-highlight">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Estas funcionalidades son el requisito principal: cada usuario debe tener su cuenta por rol y la plataforma debe conectar cursos, proyectos, mentorías, pagos, reportes y recursos.</p>
+                    </div>
+
+                    <div class="requirements-grid">
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-unlock-keyhole"></i></div>
+                            <h3>Cursos progresivos y desbloqueables</h3>
+                            <p>El acceso depende del avance del alumno y del cumplimiento de entregables.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <h3>Módulos de contenido estructurado</h3>
+                            <p>Videos, guías y plantillas enfocadas en aplicación práctica.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-folder-open"></i></div>
+                            <h3>Gestión de proyectos del usuario</h3>
+                            <p>El alumno puede desarrollar, guardar y actualizar sus entregables.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <h3>Envío y evaluación de proyectos</h3>
+                            <p>Permite validar proyectos con criterios claros y revisión por mentores.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-comments"></i></div>
+                            <h3>Retroalimentación estructurada</h3>
+                            <p>Incluye comentarios escritos y sesiones de asesoría accionables.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                            <h3>Agenda de mentorías</h3>
+                            <p>Reserva sesiones con expertos según el curso y el proyecto del estudiante.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                            <h3>Dashboard de progreso</h3>
+                            <p>Muestra avance, estado del proyecto y próximos pasos.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-users-gear"></i></div>
+                            <h3>Sistema de roles</h3>
+                            <p>Diferencia funciones para estudiantes, mentores, administradores, empresas y ONGs.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-building"></i></div>
+                            <h3>Panel institucional B2B</h3>
+                            <p>Empresas u ONGs pueden monitorear el avance e impacto de sus usuarios.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <h3>Reportes y métricas de impacto</h3>
+                            <p>Incluye tasa de finalización, proyectos aprobados y resultados generados.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-credit-card"></i></div>
+                            <h3>Sistema de pagos</h3>
+                            <p>Permite pagos o simulación de pagos integrados a asesorías o suscripciones.</p>
+                        </article>
+                        <article class="requirement-card">
+                            <div class="requirement-icon"><i class="fa-solid fa-box-archive"></i></div>
+                            <h3>Repositorio de recursos</h3>
+                            <p>Guarda recursos y plantillas accesibles según el progreso del usuario.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="kicker">Cursos destacados</span>
+                        <h2>Aprende con rutas prácticas</h2>
+                    </div>
+                    <a class="btn btn-primary" href="cursos.html">Ver todos</a>
+                </div>
+
+                <div class="course-grid">
+                    <a class="course-card featured-free-course free-course-card" href="curso-comunicacion.html">
+                        <div class="course-cover pink"><span class="level">Curso gratis</span><i class="fa-solid fa-gift"></i></div>
+                        <div class="course-body">
+                            <h3>Comunicación de Impacto</h3>
+                            <p>Accede gratis al curso y aprende a presentar mejor tu proyecto.</p>
+                            <div class="meta"><span><i class="fa-solid fa-circle-check"></i> Gratis</span><span><i class="fa-solid fa-user-tie"></i> Asesoría pagada</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar</span></div>
+                        </div>
+                    </a>
+                    <a class="course-card free-course-card" href="curso-emprendimiento.html">
+                        <div class="course-cover purple"><span class="level">Principiante</span><i class="fa-solid fa-rocket"></i></div>
+                        <div class="course-body">
+                            <h3>Emprendimiento Social</h3>
+                            <p>Convierte una idea en una propuesta clara, sostenible y medible.</p>
+                            <div class="meta"><span><i class="fa-solid fa-circle-check"></i> Gratis</span><span><i class="fa-solid fa-user-tie"></i> Asesoría pagada</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div>
+                        </div>
+                    </a>
+                    <a class="course-card free-course-card" href="curso-liderazgo.html">
+                        <div class="course-cover blue"><span class="level">Intermedio</span><i class="fa-solid fa-chess-king"></i></div>
+                        <div class="course-body">
+                            <h3>Liderazgo Estratégico</h3>
+                            <p>Dirige equipos, comunica mejor y organiza objetivos de alto impacto.</p>
+                            <div class="meta"><span><i class="fa-solid fa-circle-check"></i> Gratis</span><span><i class="fa-solid fa-user-tie"></i> Asesoría pagada</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div>
+                        </div>
+                    </a>
+                    <a class="course-card free-course-card" href="curso-digital.html">
+                        <div class="course-cover green"><span class="level">Práctico</span><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="course-body">
+                            <h3>Herramientas Digitales</h3>
+                            <p>Aprende a usar tableros, recursos y métricas para ejecutar mejor.</p>
+                            <div class="meta"><span><i class="fa-solid fa-circle-check"></i> Gratis</span><span><i class="fa-solid fa-user-tie"></i> Asesoría pagada</span></div>
+                            <div class="course-price-row"><span class="price free-price">GRATIS</span><span style="color:var(--muted); font-weight:800;">Comenzar gratis</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container banner">
+                <div>
+                    <span class="kicker" style="color:#c4b5fd;">Comienza ahora</span>
+                    <h2>Empieza con cursos gratis y paga solo si quieres asesoría.</h2>
+                    <p>El estudiante puede seleccionar cualquier curso sin costo. Si luego necesita hablar con un asesor, pasa a la página de pago de asesoría.</p>
+                </div>
+                <div class="banner-actions">
+                    <a class="btn btn-light" href="cursos.html">Ver cursos gratis</a>
+                    <a class="btn btn-primary banner-pay-btn" href="asesores.html">Solicitar asesoría</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">
+                    <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                    SU<span>Classroom</span>
+                </a>
+                <p style="margin-top: 14px;">Plataforma de liderazgo, emprendimiento y productividad para convertir aprendizaje en proyectos reales.</p>
+            </div>
+            <div>
+                <h4>Explora</h4>
+                <div class="footer-links">
+                    <a href="cursos.html">Cursos</a>
+                    <a href="asesores.html">Asesorías</a>
+                    <a href="#funcionalidades">Funcionalidades</a>
+                </div>
+            </div>
+            <div>
+                <h4>Aprende</h4>
+                <div class="footer-links">
+                    <a href="curso-emprendimiento.html">Emprendimiento Social</a>
+                    <a href="curso-liderazgo.html">Liderazgo Estratégico</a>
+                    <a href="curso-digital.html">Herramientas Digitales</a>
+                </div>
+            </div>
+            <div>
+                <h4>Acceso</h4>
+                <div class="footer-links">
+                    <a href="login.html">Ingresar</a>
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-sales-widget" data-home-chat>
+        <div class="chat-panel">
+            <div class="chat-card">
+                <div class="chat-head">
+                    <div class="chat-logo"><i class="fa-solid fa-h"></i></div>
+                    <div class="chat-copy">
+                        <div class="chat-title-row">
+                            <p>Hola, qué gusto tenerte aquí</p>
+                            <button class="chat-close" type="button" aria-label="Cerrar opciones de ayuda">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="chat-emoji">🙂</div>
+                    </div>
+                </div>
+                <p class="chat-message">
+                    Sabemos que estás interesado en SUClassroom. Cuéntanos ¿qué estás buscando?
+                </p>
+                <small>SUClassroom · 2 h</small>
+            </div>
+
+            <div class="chat-options">
+                <a href="cursos.html"><i class="fa-solid fa-laptop"></i> Quiero acceder a un curso o licencia premium para mí</a>
+                <a href="cursos.html"><i class="fa-solid fa-users"></i> Quiero más información de los cursos y soluciones</a>
+                <a href="https://wa.me/51999999999" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i> Quiero hablar con el equipo de soporte</a>
+            </div>
+        </div>
+
+        <button class="chat-open-button" type="button" aria-label="Abrir opciones de ayuda">
+            <i class="fa-solid fa-comment-dots"></i>
+            Ayuda
+        </button>
+    </div>
+
+    <script src="theme.js"></script>
+</body>
+</html>

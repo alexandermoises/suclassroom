@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productividad | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">
+                <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                SU<span>Classroom</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="asesores.html">Asesorías</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Crema</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-chart-simple"></i> Productividad</span>
+                <h1>Organiza tus tareas y mide tus avances.</h1>
+                <p>Una página interna para mostrar indicadores, tareas y rendimiento del estudiante o equipo.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container stats-grid">
+                <article class="stat-card"><strong>92%</strong><h3>Cumplimiento</h3><p>Promedio de tareas completadas durante la semana.</p></article>
+                <article class="stat-card"><strong>18</strong><h3>Entregables</h3><p>Actividades enviadas en cursos y asesorías.</p></article>
+                <article class="stat-card"><strong>6</strong><h3>Sesiones</h3><p>Reuniones de mentoría registradas en el mes.</p></article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container detail-card">
+                <span class="kicker">Lista de tareas</span>
+                <h2 style="margin-bottom:10px;">Próximas actividades</h2>
+                <ul class="lesson-list">
+                    <li><b>Actualizar propuesta de impacto</b><span>Hoy</span></li>
+                    <li><b>Revisar feedback del asesor</b><span>Mañana</span></li>
+                    <li><b>Preparar presentación final</b><span>Esta semana</span></li>
+                    <li><b>Completar evaluación del curso</b><span>Pendiente</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section course-mentors-section" id="mentores-curso" data-course-mentors data-course-id="productividad">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="kicker">Mentores del curso</span>
+                        <h2>Mentores habilitados para Productividad Personal</h2>
+                        <p class="section-copy">Aquí figuran todos los mentores. Los que pueden asesorar este curso aparecen resaltados con un color especial. Solo se activa la agenda cuando el alumno presenta su proyecto final.</p>
+                    </div>
+                    <div class="mentor-section-actions">
+                        <button class="btn btn-primary" type="button" data-mark-project>
+                            Simular presentación del proyecto final
+                        </button>
+                        <button class="btn btn-light" type="button" data-reset-course-demo>
+                            Reiniciar demo
+                        </button>
+                        <a class="btn btn-light" href="asesores.html?curso=productividad">
+                            Ver todos los mentores
+                        </a>
+                    </div>
+                </div>
+
+                <div data-course-alert></div>
+                <div class="mentor-flow-grid" data-course-flow></div>
+                <div class="mentor-grid course-mentor-grid" data-course-mentor-list></div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo" href="index.html">
+                    <span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+                    SU<span>Classroom</span>
+                </a>
+                <p style="margin-top: 14px;">Plataforma de liderazgo, emprendimiento y productividad para convertir aprendizaje en proyectos reales.</p>
+            </div>
+            <div>
+                <h4>Explora</h4>
+                <div class="footer-links">
+                    <a href="cursos.html">Cursos</a>
+                    <a href="asesores.html">Asesorías</a>
+                </div>
+            </div>
+            <div>
+                <h4>Aprende</h4>
+                <div class="footer-links">
+                    <a href="curso-emprendimiento.html">Emprendimiento Social</a>
+                    <a href="curso-liderazgo.html">Liderazgo Estratégico</a>
+                    <a href="curso-digital.html">Herramientas Digitales</a>
+                </div>
+            </div>
+            <div>
+                <h4>Acceso</h4>
+                <div class="footer-links">
+                    <a href="login.html">Ingresar</a>
+                    <a href="index.html">Inicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="theme.js"></script>
+<script src="mentores.js"></script>
+</body>
+</html>

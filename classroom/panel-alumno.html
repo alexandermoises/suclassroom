@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Alumno | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-protected="true" data-allowed-roles="alumno">
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a>
+            <ul class="nav-links">
+                <li><a class="active" href="panel-alumno.html">Mi panel</a></li>
+                <li><a href="#mis-cursos">Cursos</a></li>
+                <li><a href="#mis-mentores">Mentores</a></li>
+                <li><a href="#mi-proyecto">Mi proyecto</a></li>
+                <li><a href="pago-asesoria.html">Pago asesoría</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="btn btn-light" href="login.html">Cambiar cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema"><i class="fa-solid fa-circle-half-stroke"></i><span>Crema</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero student-hero">
+            <div class="container student-hero-grid">
+                <div>
+                    <span class="badge"><i class="fa-solid fa-user-graduate"></i> Cuenta de alumno</span>
+                    <h1>Bienvenido a tu panel de aprendizaje.</h1>
+                    <p>Desde aquí puedes empezar un curso, ver mentores habilitados, trabajar tu proyecto y pagar una asesoría cuando presentes tus entregables.</p>
+                </div>
+                <div class="student-progress-card">
+                    <span class="kicker">Tu avance actual</span>
+                    <strong>25%</strong>
+                    <p>Primera clase gratis disponible. Siguiente paso: elegir curso y registrar tu proyecto.</p>
+                    <div class="student-progress-bar"><span style="width:25%"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="mis-cursos">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="kicker">Cursos disponibles para el alumno</span>
+                        <h2>Empieza con la primera clase gratis</h2>
+                    </div>
+                    <p class="section-copy">El alumno inicia sin pago. Para recibir asesoría personalizada debe presentar su proyecto y pagar la sesión con un mentor.</p>
+                </div>
+
+                <div class="course-grid student-course-grid">
+                    <a class="course-card free-course-card" href="curso-emprendimiento.html">
+                        <div class="course-cover purple"><span class="level">Primera clase gratis</span><i class="fa-solid fa-rocket"></i></div>
+                        <div class="course-body">
+                            <h3>Emprendimiento Social</h3>
+                            <p>Valida tu idea, modelo de negocio y propuesta de valor.</p>
+                            <div class="meta"><span><i class="fa-solid fa-lock-open"></i> Disponible</span><span><i class="fa-solid fa-folder-open"></i> Proyecto obligatorio</span></div>
+                        </div>
+                    </a>
+
+                    <a class="course-card free-course-card" href="curso-marketing.html">
+                        <div class="course-cover pink"><span class="level">Primera clase gratis</span><i class="fa-solid fa-bullhorn"></i></div>
+                        <div class="course-body">
+                            <h3>Marketing Digital</h3>
+                            <p>Aprende a comunicar, vender y captar clientes para tu proyecto.</p>
+                            <div class="meta"><span><i class="fa-solid fa-lock-open"></i> Disponible</span><span><i class="fa-solid fa-user-tie"></i> Mentor habilitado</span></div>
+                        </div>
+                    </a>
+
+                    <a class="course-card free-course-card" href="curso-liderazgo.html">
+                        <div class="course-cover blue"><span class="level">Primera clase gratis</span><i class="fa-solid fa-chess-king"></i></div>
+                        <div class="course-body">
+                            <h3>Liderazgo Estratégico</h3>
+                            <p>Organiza tu equipo, metas y decisiones para avanzar con claridad.</p>
+                            <div class="meta"><span><i class="fa-solid fa-chart-line"></i> Progreso guiado</span><span><i class="fa-solid fa-file-lines"></i> Entregables</span></div>
+                        </div>
+                    </a>
+
+                    <a class="course-card free-course-card" href="curso-digital.html">
+                        <div class="course-cover green"><span class="level">Primera clase gratis</span><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="course-body">
+                            <h3>Herramientas Digitales</h3>
+                            <p>Usa plantillas, tableros y recursos para ejecutar mejor tu idea.</p>
+                            <div class="meta"><span><i class="fa-solid fa-folder-open"></i> Recursos</span><span><i class="fa-solid fa-circle-check"></i> Aplicación práctica</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="mis-mentores">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="kicker">Mentores disponibles</span>
+                        <h2>Elige un mentor cuando presentes tu proyecto</h2>
+                    </div>
+                    <p class="section-copy">Los mentores revisan el proyecto, dan retroalimentación y atienden la asesoría pagada.</p>
+                </div>
+
+                <div class="mentor-grid student-mentor-grid">
+                    <article class="mentor-card mentor-enabled">
+                        <div class="mentor-head">
+                            <div class="mentor-photo">ME</div>
+                            <div>
+                                <h3>Mentor de emprendimiento</h3>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p>Te ayuda con modelo de negocio, propuesta de valor y validación de mercado.</p>
+                        <div class="mentor-card-action"><a class="btn btn-primary" href="pago-asesoria.html">Solicitar asesoría</a></div>
+                    </article>
+
+                    <article class="mentor-card mentor-enabled">
+                        <div class="mentor-head">
+                            <div class="mentor-photo">MM</div>
+                            <div>
+                                <h3>Mentor de marketing</h3>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p>Te orienta para comunicar tu proyecto, conseguir clientes y organizar campañas.</p>
+                        <div class="mentor-card-action"><a class="btn btn-primary" href="pago-asesoria.html">Solicitar asesoría</a></div>
+                    </article>
+
+                    <article class="mentor-card mentor-enabled">
+                        <div class="mentor-head">
+                            <div class="mentor-photo">MS</div>
+                            <div>
+                                <h3>Mentor social</h3>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                            </div>
+                        </div>
+                        <p>Evalúa impacto, sostenibilidad y resultados de programas sociales o emprendimientos.</p>
+                        <div class="mentor-card-action"><a class="btn btn-primary" href="pago-asesoria.html">Solicitar asesoría</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="mi-proyecto">
+            <div class="container student-work-grid">
+                <article class="info-card student-project-card">
+                    <span class="kicker">Mi proyecto</span>
+                    <h2>Registra tu empresa, emprendimiento o idea</h2>
+                    <p>El avance del curso se adapta al proyecto del alumno. Debes desarrollar entregables, guardarlos y presentarlos para que un mentor los revise.</p>
+                    <form class="student-project-form" onsubmit="event.preventDefault(); localStorage.setItem('classroom-project-ready','true'); alert('Proyecto guardado. Ahora puedes presentar entregables y solicitar asesoría.');">
+                        <label>Tipo de proyecto
+                            <select required>
+                                <option>Emprendimiento</option>
+                                <option>Empresa</option>
+                                <option>Idea de proyecto</option>
+                                <option>Programa social</option>
+                            </select>
+                        </label>
+                        <label>Nombre del proyecto
+                            <input type="text" placeholder="Ejemplo: Marca de ropa sostenible" required>
+                        </label>
+                        <label>Entregable actual
+                            <textarea rows="4" placeholder="Describe tu propuesta de valor, avance o link del archivo"></textarea>
+                        </label>
+                        <button class="btn btn-primary" type="submit">Guardar proyecto</button>
+                    </form>
+                </article>
+
+                <aside class="info-card student-next-card">
+                    <span class="kicker">Ruta del alumno</span>
+                    <h3>Cómo avanzas</h3>
+                    <ol class="student-steps">
+                        <li><b>1. Curso gratis:</b> accedes a la primera clase sin pagar.</li>
+                        <li><b>2. Entregable:</b> aplicas lo aprendido en tu proyecto.</li>
+                        <li><b>3. Revisión:</b> el mentor aprueba o devuelve feedback.</li>
+                        <li><b>4. Asesoría:</b> pagas para una sesión personalizada.</li>
+                        <li><b>5. Nuevo curso:</b> se desbloquea cuando cumples el avance.</li>
+                    </ol>
+                    <a class="btn btn-light" href="pago-asesoria.html">Ir a pago de asesoría</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a><p style="margin-top:14px;">Panel del alumno para cursos, mentores, proyecto y asesoría.</p></div>
+            <div><h4>Alumno</h4><div class="footer-links"><a href="#mis-cursos">Cursos</a><a href="#mis-mentores">Mentores</a></div></div>
+            <div><h4>Proyecto</h4><div class="footer-links"><a href="#mi-proyecto">Mi proyecto</a><a href="pago-asesoria.html">Pago asesoría</a></div></div>
+            <div><h4>Soporte</h4><div class="footer-links"><a href="https://wa.me/51999999999" target="_blank">WhatsApp</a><a href="login.html">Cambiar cuenta</a></div></div>
+        </div>
+    </footer>
+<script src="auth-guard.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

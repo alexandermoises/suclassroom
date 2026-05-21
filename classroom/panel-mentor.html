@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Mentor | SUClassroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body data-protected="true" data-allowed-roles="mentor">
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a>
+            <ul class="nav-links">
+                <li><a class="active" href="panel-mentor.html">Mi panel</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a class="btn btn-whatsapp" href="https://wa.me/51999999999" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                <a class="btn btn-light" href="login.html">Iniciar sesión</a>
+                <a class="btn btn-primary" href="registro.html">Crear cuenta</a>
+                <button class="theme-toggle" type="button" aria-label="Cambiar tema"><i class="fa-solid fa-circle-half-stroke"></i><span>Crema</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="badge"><i class="fa-solid fa-user-tie"></i> Panel mentor</span>
+                <h1>Panel del mentor.</h1>
+                <p>El mentor tiene su propia cuenta para revisar proyectos, dar retroalimentación y atender asesorías pagadas por los alumnos.</p>
+            </div>
+        </section>
+
+        <section class="section" id="proyectos">
+            <div class="container dashboard-grid">
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-folder-check"></i>
+                    <h3>Proyectos enviados</h3>
+                    <p>Lista de proyectos finales que necesitan revisión del mentor.</p>
+                    <span class="status-pill">8 pendientes</span>
+                </article>
+                <article class="dashboard-card highlight-dashboard-card">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3 id="feedback">Retroalimentación</h3>
+                    <p>El mentor puede dejar comentarios, recomendaciones y próximos pasos al alumno.</p>
+                    <button class="btn btn-light">Registrar feedback</button>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h3 id="agenda">Agenda de asesorías</h3>
+                    <p>Sesiones pagadas que ya fueron habilitadas para los alumnos.</p>
+                    <span class="status-pill">3 asesorías hoy</span>
+                </article>
+                <article class="dashboard-card">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h3>Cursos asignados</h3>
+                    <p>El mentor solo asesora los cursos para los que está habilitado.</p>
+                    <a class="btn btn-primary" href="asesores.html">Ver asesorías</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container footer-grid"><div><a class="logo" href="index.html"><span class="logo-mark"><i class="fa-solid fa-graduation-cap"></i></span>SU<span>Classroom</span></a><p style="margin-top:14px;">Panel de mentor para proyectos y asesorías.</p></div><div><h4>Acceso</h4><div class="footer-links"><a href="login.html">Iniciar sesión</a><a href="registro.html">Crear cuenta</a></div></div><div><h4>Sesión</h4><div class="footer-links"><a href="login.html">Cambiar cuenta</a><a href="registro.html">Crear cuenta</a></div></div><div><h4>Soporte</h4><div class="footer-links"><a href="https://wa.me/51999999999" target="_blank">WhatsApp</a><a href="index.html">Inicio</a></div></div></div></footer>
+<script src="auth-guard.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
